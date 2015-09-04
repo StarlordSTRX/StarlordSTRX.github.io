@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>StarlordSTRX</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="js/sticky_footer.js" type="text/javascript"></script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="container">
+<div id="logo">Starlord STRX</div>
+<div id="nav">
+	<a href="#" id="display-nav"><img id="display-nav-img" src="http://www.carelshaven.nl/img/menu_icon.png"></a>
+<div id="hidden-nav">
+<div class="hidden-item"><a href="#" class="hiddenlink">Home</a></div>
+<div class="hidden-item"><a href="#" class="hiddenlink">Portfolio</a></div>
+<div class="hidden-item"><a href="#" class="hiddenlink">About</a></div>
+<div class="hidden-item"><a href="#" class="hiddenlink">Contact</a></div>
+</div>
+</div>
+<br><br>
+<div id="mainbox">
+<span id="maintitle">Hello There!</span>
+<p id="maintext">
+I am Strx online and this is my github page
+nobody knows why its here, it just is. (deal with it)
+the main purpose of this site is unknown. Perhaps test code on it?
+A portfolio on my github? info about me? a famous thing?
+To qouth thy raven: nevermore! In other words- this is a work in progress,
+please ignore
+<br><br>
+- Strx
+</p>
+</div>
+<br>
+<div id="footer">
+Email: strxweb@gmail.com<br>
+Twitter: @strxweb
+<br><br>
+Copyright &copy; Strx 2015
+</div>
+</div>
+<script>
+$(document).ready(function(){
+	$("#hidden-nav").hide();
+
+    $("#nav").click(function(){
+        $("#hidden-nav").slideToggle();
+    });
+});
+</script>
+
+</body>
+</html>
