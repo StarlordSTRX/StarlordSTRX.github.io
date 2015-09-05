@@ -21,19 +21,6 @@ body{
 	font-weight: bold;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-image: -webkit-gradient(
-	linear,
-	left top,
-	left bottom,
-	color-stop(0, #7D3096),
-	color-stop(0.8, #481D7D)
-);
-background-image: -o-linear-gradient(bottom, #7D3096 0%, #481D7D 80%);
-background-image: -moz-linear-gradient(bottom, #7D3096 0%, #481D7D 80%);
-background-image: -webkit-linear-gradient(bottom, #7D3096 0%, #481D7D 80%);
-background-image: -ms-linear-gradient(bottom, #7D3096 0%, #481D7D 80%);
-background-image: linear-gradient(to bottom, #7D3096 0%, #481D7D 80%);
-color:#ffffff;
 }
 #nav{
 	width: 100%;
