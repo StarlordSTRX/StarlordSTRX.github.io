@@ -30,7 +30,8 @@ var Sim = global_namespace.Import('startpad.enigma.sim');
 <body>
 <div class="page">
 
-<h1>Enigma Machine</h1>
+<h1>Enigma Machine Simulator</h1>
+<p style="color:gray;">by Mike Koss</p>
 <hr/>
 
 <div class="left">
@@ -60,8 +61,13 @@ var Sim = global_namespace.Import('startpad.enigma.sim');
 		</ol>
 	</fieldset>
 	<p>
-	
+	To learn more about the <a target="_blank" href="http://en.wikipedia.org/wiki/Enigma_machine">Enigma Machine</a>,
+	try using the <a target="_blank" href="http://mckoss.com/Crypto/Enigma.htm">Paper Engima</a>.  You
+	can also read the <a target="_blank" href="http://code.google.com/p/startpad/source/browse/labs/js/enigma/enigma.js">source code</a>
+	used by this Enigma Simulator.
 	</p>
+	<a target="_blank" href="http://en.wikipedia.org/wiki/Enigma_machine"><img src="images/mycryptos.jpg"/></a>
+	<a target="_blank" href="http://mckoss.com/Crypto/Enigma.htm"><img src="images/EnigmaThumb.jpg"/></a>
 </div>
 
 <div class="right">
@@ -73,7 +79,7 @@ var Sim = global_namespace.Import('startpad.enigma.sim');
 			</li>
 			<li>
 				<label class="box" for="plain">Type Message Here:</label>
-				<textarea class="text-input" id="plain">hello world</textarea>
+				<textarea class="text-input" id="plain">QMJIDO MZWZJFJR</textarea>
 			</li>
 			<li>
 				<label class="box" for="cipher">Read Output Here:</label>
@@ -84,10 +90,21 @@ var Sim = global_namespace.Import('startpad.enigma.sim');
 				<label>Preserve spacing</label>
 
 			</li>
+			<li>
+				<label>Send to Twitter:</label>
+				<a id="twitter" target="_blank"
+				   href="http://twitter.com/home?source=Enigma&status=Enigma Machine http://bit.ly/enigma-machine"
+				   title="Share Link on Twitter">
+					<img src="images/twitter-logo.png">
+				</a>
+			</li>
 		</ol>
 	</fieldset>
 </div>
 
+<div style="clear:both;padding-top: 15px;" id="disqus_thread"></div>
+<script type="text/javascript" src="http://disqus.com/forums/startpadlabs/embed.js"></script>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </div> <!-- page -->
 
