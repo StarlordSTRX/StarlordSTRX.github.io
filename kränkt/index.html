@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<title>Complete Responsive Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- 1.x compiled and minified Jquery snippet -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-left:50px;"><br>
+	<b>Hej på er</b><br>
+	<form id="frm1">
+		<input type="radio" name="heyYou" value="SVT"> SVT. 
+		<input type="radio" name="heyYou" value="Skolan"> Skolan. 
+		<input type="radio" name="heyYou" value="Godhetsapostlar"> "Godhetsapostlar". 
+		<input type="radio" name="heyYou" value="alla muslimer"> alla muslimer. 
+
+		<br><br>
+		<b>Jag känner mig oerhört</b><br>
+		<input type="radio" name="iFeel" value="kränkt"> kränkt 
+		<input type="radio" name="iFeel" value="förbannad"> förbannad 
+		<input type="radio" name="iFeel" value="hatisk"> hatisk 
+		<input type="radio" name="iFeel" value="upprörd"> upprörd 
+
+		<br><br>
+		<b>över ert beslut att </b><br>
+		<input type="radio" name="beslut" value="tabort"> ta bort 
+		<input type="radio" name="beslut" value="ändra"> ändra 
+		<input type="radio" name="beslut" value="hamed"> ha med 
+
+		<br><br>
+		<input type="radio" name="about" value="rasistiskasteriotyper"> "rasistiska steriotyper" 
+		<input type="radio" name="about" value="muslimer"> muslimer 
+		<input type="radio" name="about" value="svenskatraditioner"> svenska traditioner 
+		<input type="radio" name="about" value="hen"> "hen" 
+		<br><br>
+		<input type="radio" name="the" value="iden"> i den 
+		<input type="radio" name="the" value="urden"> ur den 
+		<input type="radio" name="the" value="idet"> i det 
+		<input type="radio" name="the" value="urdet"> ur det 
+		<br><br>
+		<input type="radio" name="group" value="ursvenska"> ursvenska 
+		<input type="radio" name="group" value="traditionella"> traditionella 
+		<input type="radio" name="group" value="älskade"> älskade 
+		<input type="radio" name="group" value="uppskattade"> uppskattade 
+		<br><br>
+		<input type="radio" name="from" value="luciatåget"> Luciatåget 
+		<input type="radio" name="from" value="kalleankasjul"> "Kalle Ankas Jul" 
+		<input type="radio" name="from" value="alladinasken"> Alladin-asken
+		<input type="radio" name="from" value="julkalendern"> Julkalendern
+		<br><br>
+		<input type="radio" name="excl" value="1"> !
+		<input type="radio" name="excl" value="2"> !!
+		<input type="radio" name="excl" value="3"> !!!
+		<input type="radio" name="excl" value="lots"> !!?!!!11!!!
+		<br><br>
+		<b>Vi</b><br>
+		<input type="radio" name="we" value="oroligaföräldrar"> oroliga föräldrar 
+		<input type="radio" name="we" value="sverigevänner"> Sverigevänner 
+		<input type="radio" name="we" value="kristna"> kristna
+		<input type="radio" name="we" value="utanskyddslappar"> utan skyddslappar
+
+		<br><br>
+		<b>Vi kräver nu att </b><br>
+		<input type="radio" name="heyYouThere" value="SVT"> SVT 
+		<input type="radio" name="heyYouThere" value="Skolan"> Skolan 
+		<input type="radio" name="heyYouThere" value="allamuslimer"> alla muslimer  
+		<input type="radio" name="heyYouThere" value="pk-feministerna"> pk-feministerna  
+
+		<br><br>
+		<b>Omedelbart </b><br>
+		<input type="radio" name="fixed" value="rensasutur"> rensas ut ur 
+		<input type="radio" name="fixed" value="tasbortur"> tas bort ur  
+		<input type="radio" name="fixed" value="ändrartillbaka"> ändrar tillbaka 
+		
+		<br><br>
+<input type="radio" name="from" value="luciatåget"> Luciatåget 
+		<input type="radio" name="fromThe" value="kalleankasjul"> "Kalle Ankas Jul" 
+		<input type="radio" name="fromThe" value="alladinasken"> Alladin-asken
+		<input type="radio" name="fromThe" value="julkalendern"> Julkalendern
+		
+		<br><br>
+		<b>så att allting blir som det var förut! Med ovänliga hälsningar </b><br>
+
+		<input type="radio" name="" value="bekymradsverigevän"> Bekymrad Sverigevän!
+		<input type="radio" name="" value="vänavordning"> Vän av ordning!
+		<input type="radio" name="" value="sd2018"> SD 2018!
+		<br><br>
+		<input type="submit" value="Generera!" style="width:200px;" onClick="GenText();">
+	</form>
+
+<script type="text/javascript">
+	function GenText(){
+		 var val;
+    // get list of radio buttons with specified name
+    var radios = form.elements[heyYou];
+    
+    // loop through list of radio buttons
+    for (var i=0, len=radios.length; i<len; i++) {
+        if ( radios[i].checked ) { // radio checked?
+            val = radios[i].value; // if so, hold its value in val
+            alert(val);
+            break; // and break out of for loop
+        }
+    }
+
+
+	}
+
+</script>
+
+</body>
+</html>
