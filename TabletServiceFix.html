@@ -12,39 +12,88 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	
 	<style>
-		#cool-bt{
-			    border-style: solid;
-    			border-width: 1px;
-			    border-color: #000000;
-				border-radius: 50px;
-				padding:15px;
-				
-		}
-		#cool-bt:hover{
-			background-color:rgba(240, 240, 240, 0.3);
-			text-decoration: none;
-		}
-		#fancymain{
-			padding-top:30px;
-			height: 60%;
-			background: url(http://www.webantics.com/content/images/thumbs/0010870_wacom-intuos-pro-multi-touch-graphics-tablet-large-a4.jpeg) no-repeat center center; 
+		/*
+		background: url(http://www.webantics.com/content/images/thumbs/0010870_wacom-intuos-pro-multi-touch-graphics-tablet-large-a4.jpeg) no-repeat center center; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		*/
+		html, body{
+		height: 100%;
+		}
+		#intro{
+		background: url(http://www.webantics.com/content/images/thumbs/0010870_wacom-intuos-pro-multi-touch-graphics-tablet-large-a4.jpeg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100%;
+		
+		}
+		#title{
+		padding-left: 50px;
+		padding-top: 30px;
+		}
+		#headline{
+		font-size: 5em;
+		}
+		#introText{
+		padding-left: 65px;
+		font-size: 1.4em;
+			text-align: justify;
+		}
+		#buttons{
+		text-align: center;
+		padding-top: 20px;
+		font-size: 1.5em;
+		}
+		#buttons a{
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 50px;
+		padding: 20px;
+		background-color: rgba(240,240,240,0.4);
+		color: #774da0;
+		}
+		#buttons a:hover{
+		background-color: rgba(240,240,240,0.0);
+		color: rebeccapurple;
+		}
+		#buttons p{
+		font-size: 18px;
 		}
 	</style>
 	
 </head>
 <body>
 
-	<div class="container" id="fancyMain">
-		<h1>Tablet Service Fix</h1>
-		<p>The ultimate program for restarting your tablet service.</p>
+	<div class="container-fluid" id="intro">
+		<div class="row" id="title">
+			<div class="col-md-12">
+				<h1 id="headline">Tablet Service Fix</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6" id="introText">
+				<p>
+					Streamline your work creative process today with the Tablet Service Fix today. When your tablet drivers stop and you need to spend minutes to fix them you
+					get distracted and led away from work. Worry no more! with Tablet Service Fix you can fix your tablet drivers with just a click. Tablet Service Fixed is built
+					by two aspiring programmers att LBS lund to help content creators around the world.
+					
+				</p>
+			</div>
+			
+			<div class="col-md-6" id="buttons">
+				<br>
+				<a href="#"><span class="glyphicon glyphicon-save"></span> Download Tablet Service Fix</a><br><br>
+			</div>
+		</div>
+			
 		
-		<br><br>
-		<div class="fancy-link"><a href="#" id="cool-bt"><span class="glyphicon glyphicon-save" style="color:forestgreen;"></span> Download Tablet Service Fix</a></div>
 	</div>
+	
+	
 
 </body>
 </html>
