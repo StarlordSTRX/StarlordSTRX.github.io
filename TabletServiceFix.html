@@ -21,13 +21,15 @@
 		*/
 		html, body{
 		height: 100%;
-		}
-		#intro{
-		background: url(http://www.webantics.com/content/images/thumbs/0010870_wacom-intuos-pro-multi-touch-graphics-tablet-large-a4.jpeg) no-repeat center center fixed; 
+			background: url(http://www.webantics.com/content/images/thumbs/0010870_wacom-intuos-pro-multi-touch-graphics-tablet-large-a4.jpeg) no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		}
+		#intro{
+		
+			background-color: rgba(240,240,240,0.5);
 		height: 100%;
 		
 		}
@@ -54,15 +56,24 @@
 		border-radius: 50px;
 		padding: 20px;
 		background-color: rgba(240,240,240,0.4);
+		
 		color: #774da0;
 		}
 		#buttons a:hover{
-		background-color: rgba(240,240,240,0.0);
-		color: rebeccapurple;
+    	animation-name: example;
+    	animation-duration: 1s;
+		text-decoration: none;
+			background-color:rgba(80,80,80,0.1);
+		/* color: #643b8e; */
 		}
 		#buttons p{
 		font-size: 18px;
 		}
+		
+		@keyframes example {
+    from {background-color:rgba(240,240,240,0.4);}
+    to {background-color:rgba(80,80,80,0.1);}
+			
 	</style>
 	
 </head>
